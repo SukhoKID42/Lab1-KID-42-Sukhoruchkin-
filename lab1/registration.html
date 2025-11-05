@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстраційна форма</title>
+</head>
+<body>
+  <h1>Реєстраційна форма користувача</h1>
 
+  <p><a href="../index.html">← Повернутися до списку лабораторних</a></p>
+
+  <form action="https://webhook.site/ВАШ_УНІКАЛЬНИЙ_URL" method="post">
+    <label for="fname">Ім’я:</label><br>
+    <input type="text" id="fname" name="first_name" required><br><br>
+
+    <label for="lname">Прізвище:</label><br>
+    <input type="text" id="lname" name="last_name" required><br><br>
+
+    <label for="email">Електронна пошта:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Пароль:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm_password">Підтвердження паролю:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+    <label for="birthdate">Дата народження:</label><br>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+
+    <label for="gender">Стать:</label><br>
+    <select id="gender" name="gender">
+      <option value="">Оберіть стать</option>
+      <option value="male">Чоловіча</option>
+      <option value="female">Жіноча</option>
+      <option value="other">Інша</option>
+    </select><br><br>
+
+    <input type="submit" value="Зареєструватися">
+  </form>
+
+</body>
+</html>
