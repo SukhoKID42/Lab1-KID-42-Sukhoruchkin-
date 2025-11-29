@@ -4,41 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Реєстраційна форма</title>
+  <!-- Підключення зовнішнього CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Реєстраційна форма користувача</h1>
+  <main class="page">
+    <h1>Реєстраційна форма користувача</h1>
 
-  <p><a href="../index.html">← Повернутися до списку лабораторних</a></p>
+    <p class="back-link"><a href="../index.html">← Повернутися до списку лабораторних</a></p>
 
-  <form action="https://webhook.site/c621cb56-c496-4db7-a443-d4cce811eb4c" method="post">
-    <label for="fname">Ім’я:</label><br>
-    <input type="text" id="fname" name="first_name" required><br><br>
+    <form class="card form" action="https://webhook.site/c621cb56-c496-4db7-a443-d4cce811eb4c" method="post">
+      <div class="form-row">
+        <label for="fname">Ім’я:</label>
+        <input type="text" id="fname" name="first_name" required>
+      </div>
 
-    <label for="lname">Прізвище:</label><br>
-    <input type="text" id="lname" name="last_name" required><br><br>
+      <div class="form-row">
+        <label for="lname">Прізвище:</label>
+        <input type="text" id="lname" name="last_name" required>
+      </div>
 
-    <label for="email">Електронна пошта:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+      <div class="form-row">
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-    <label for="password">Пароль:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
+      <div class="form-row two-cols">
+        <div>
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+          <label for="confirm_password">Підтвердження паролю:</label>
+          <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+      </div>
 
-    <label for="confirm_password">Підтвердження паролю:</label><br>
-    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+      <div class="form-row two-cols">
+        <div>
+          <label for="birthdate">Дата народження:</label>
+          <input type="date" id="birthdate" name="birthdate">
+        </div>
+        <div>
+          <label for="gender">Стать:</label>
+          <select id="gender" name="gender">
+            <option value="">Оберіть стать</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+            <option value="other">Інша</option>
+          </select>
+        </div>
+      </div>
 
-    <label for="birthdate">Дата народження:</label><br>
-    <input type="date" id="birthdate" name="birthdate"><br><br>
-
-    <label for="gender">Стать:</label><br>
-    <select id="gender" name="gender">
-      <option value="">Оберіть стать</option>
-      <option value="male">Чоловіча</option>
-      <option value="female">Жіноча</option>
-      <option value="other">Інша</option>
-    </select><br><br>
-
-    <input type="submit" value="Зареєструватися">
-  </form>
-
+      <div class="form-actions">
+        <input class="btn" type="submit" value="Зареєструватися">
+      </div>
+    </form>
+  </main>
 </body>
 </html>
