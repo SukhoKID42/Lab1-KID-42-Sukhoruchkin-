@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 8px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 14px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #444;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+}
+
+button:active {
+  background: #555;
+  transform: translateY(2px);
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.space {
+  grid-column: span 6;
+}
