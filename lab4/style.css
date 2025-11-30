@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #4a90e2;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.planner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.task {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.task input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.task input[type="text"],
+.task textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.task input[type="text"]:focus,
+.task textarea:focus {
+  background: #eef6ff;
+  border-radius: 5px;
+}
