@@ -1,55 +1,35 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <title>Лабораторна №4 — Планер</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1 contenteditable="true">Мій Планер</h1>
-  </header>
+<header>
+  <h1 contenteditable="true">План на тиждень</h1>
+  <div class="week-meta">
+    <div contenteditable="true">Звичка тижня: Пити воду</div>
+    <label><input type="checkbox"> Rocked it</label>
+    <label><input type="checkbox"> Room for improvement</label>
+  </div>
+</header>
 
-  <main class="planner">
-    <!-- Сьогодні -->
+<div class="planner-grid">
+  <aside class="sidebar">
+    <section>
+      <h2 contenteditable="true">Top 3 Goals</h2>
+      <div class="task"><input type="checkbox"><label contenteditable="true">Завершити проект</label></div>
+      ...
+    </section>
+    <section>
+      <h2 contenteditable="true">To Do</h2>
+      <div class="task"><input type="checkbox"><label contenteditable="true">Пройти тест</label></div>
+      ...
+    </section>
+    ...
+  </aside>
+
+  <main class="week">
     <section class="day">
-      <h2 contenteditable="true">Сьогодні</h2>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Зробити практичну №4</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Підготуватися до лабораторної №4</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Пройти тест з Grid</label></div>
+      <h3 contenteditable="true">Понеділок</h3>
+      <input type="checkbox">
+      <div contenteditable="true" class="note">Зустріч о 14:00</div>
     </section>
-
-    <!-- Завтра -->
-    <section class="day">
-      <h2 contenteditable="true">Завтра</h2>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Прочитати конспект з теми FlexBox</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Підготувати презентацію</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Зробити нотатки по лекції</label></div>
-    </section>
-
-    <!-- Цього тижня -->
-    <section class="day">
-      <h2 contenteditable="true">Цього тижня</h2>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Здати всі практичні роботи</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Підготуватися до контрольної</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Зробити проект на GitHub</label></div>
-    </section>
-
-    <!-- Довгострокові цілі -->
-    <section class="day">
-      <h2 contenteditable="true">Довгострокові цілі</h2>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Вивчити React</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Розібратися з Docker</label></div>
-      <div class="task"><input type="checkbox"><label contenteditable="true">Побудувати власний сайт-портфоліо</label></div>
-    </section>
-
-    <!-- Нотатки -->
-    <section class="notes">
-      <h2 contenteditable="true">Нотатки</h2>
-      <div contenteditable="true" class="editable-notes">Додаткові ідеї...</div>
-    </section>
+    ...
   </main>
-</body>
-</html>
+</div>
+
 
