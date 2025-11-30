@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f4f4f4;
+  font-family: 'Nunito', sans-serif;
+  background: #f0f2f5;
   color: #333;
 }
 
@@ -12,6 +12,11 @@ header {
   text-align: center;
 }
 
+header h1[contenteditable="true"] {
+  outline: none;
+  cursor: text;
+}
+
 .planner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -19,14 +24,25 @@ header {
   padding: 20px;
 }
 
-.task {
+.day, .notes {
   background: #fff;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.day h2[contenteditable="true"],
+.notes h2[contenteditable="true"] {
+  margin-top: 0;
+  cursor: text;
+  outline: none;
+}
+
+.task {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .task input[type="checkbox"] {
@@ -34,17 +50,17 @@ header {
   cursor: pointer;
 }
 
-.task input[type="text"],
-.task textarea {
-  width: 100%;
-  border: none;
-  background: transparent;
-  font-size: 16px;
+.task label[contenteditable="true"] {
+  flex: 1;
+  cursor: text;
   outline: none;
 }
 
-.task input[type="text"]:focus,
-.task textarea:focus {
-  background: #eef6ff;
+.notes .editable-notes {
+  min-height: 150px;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  padding: 10px;
+  background: #fafafa;
+  cursor: text;
 }
