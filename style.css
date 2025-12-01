@@ -29,7 +29,7 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f3c88; /* темно-синій акцент */
+  color: #1f3c88;
 }
 
 nav ul {
@@ -46,14 +46,14 @@ nav a {
 }
 
 nav a:hover {
-  color: #4aa3df; /* блакитний при наведенні */
+  color: #4aa3df;
 }
 
 /* ===== Hero ===== */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #4aa3df, #1f3c88); /* градієнт блакитний → темно-синій */
+  background: linear-gradient(135deg, #4aa3df, #1f3c88);
   color: #fff;
 }
 
@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: #e6f2ff; /* ніжний блакитний */
+  background: #e6f2ff;
   color: #1f3c88;
   transform: translateY(-3px);
 }
@@ -96,16 +96,16 @@ main h2 {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  justify-items: center;
 }
 
 .card {
   background: #ffffff;
   border: 2px solid #e6f2ff;
-  border-radius: 50%; /* окружність */
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
   text-decoration: none;
   color: #333;
@@ -115,8 +115,8 @@ main h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-width: 200px;
-  min-height: 200px; /* щоб коло мало розмір */
+  width: 220px;
+  height: 220px;
   padding: 1rem;
 }
 
