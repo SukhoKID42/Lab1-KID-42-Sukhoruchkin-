@@ -1,3 +1,10 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ===== Base ===== */
 body {
   font-family: 'Inter', Arial, sans-serif;
@@ -8,12 +15,34 @@ body {
 
 /* ===== Header ===== */
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   background: #ffffff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #1f3c88; /* темно-синій акцент */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav a:hover {
@@ -22,38 +51,115 @@ nav a:hover {
 
 /* ===== Hero ===== */
 .hero {
+  text-align: center;
+  padding: 4rem 2rem;
   background: linear-gradient(135deg, #4aa3df, #1f3c88); /* градієнт блакитний → темно-синій */
   color: #fff;
 }
 
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
 .btn {
-  background: #ffffff;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #fff;
   color: #1f3c88;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
 }
 
 .btn:hover {
   background: #e6f2ff; /* ніжний блакитний */
   color: #1f3c88;
+  transform: translateY(-3px);
 }
 
-/* ===== Cards ===== */
+/* ===== Labs Section ===== */
+main {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
 .card {
   background: #ffffff;
-  border: 2px solid #e6f2ff; /* легка рамка */
+  border: 2px solid #e6f2ff;
+  border-radius: 50%; /* окружність */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 200px;
+  min-height: 200px; /* щоб коло мало розмір */
+  padding: 1rem;
 }
 
 .card:hover {
   background: #4aa3df;
   color: #fff;
+  transform: translateY(-5px);
+}
+
+/* ===== About Section ===== */
+#about {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+#about h2 {
+  margin-bottom: 1rem;
 }
 
 /* ===== Footer ===== */
 footer {
+  padding: 2rem;
   background: #1f3c88;
   color: #fff;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
 }
 
 /* ===== Fixed Note ===== */
 .fixed-note {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   background: #4aa3df;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
 }
+
