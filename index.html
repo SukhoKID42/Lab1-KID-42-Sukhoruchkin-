@@ -3,18 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Список лабораторних робіт</title>
+  <title>Моє портфоліо — Лабораторні роботи</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Список лабораторних робіт</h1>
-  <ul>
-    <li><a href="lab1/registration.html">Лабораторна №1 — Основи HTML</a></li>
-    <li><a href="lab2/lab2.html">Лабораторна №2 — CSS Selectors Challenge</a></li>
-    <li><a href="lab3/index.html">Лабораторна №3 — YouTube Layout (FlexBox)</a></li>
-    <li><a href="lab4/index.html">Лабораторна №4 — Планер (Grid)</a></li>
-    <li><a href="pract3/index.html">Практична №3 — YouTube Layout (FlexBox)</a></li>
-    <li><a href="pract4/index.html">Практична №4 — Fullsize Клавіатура (Grid)</a></li>
-  </ul>
+  <!-- Header -->
+  <header>
+    <div class="logo">Моє Портфоліо</div>
+    <nav>
+      <ul>
+        <li><a href="#labs">Лабораторні</a></li>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Вітаю у моєму портфоліо</h1>
+    <p>Тут зібрані всі мої лабораторні та практичні роботи з курсу веб‑розробки.</p>
+    <a href="#labs" class="btn">Переглянути роботи</a>
+  </section>
+
+  <!-- Labs Section -->
+  <main id="labs">
+    <h2>Список лабораторних робіт</h2>
+    <div class="cards">
+      <a href="lab1/registration.html" class="card">Лабораторна №1 — Основи HTML</a>
+      <a href="lab2/lab2.html" class="card">Лабораторна №2 — CSS Selectors Challenge</a>
+      <a href="lab3/index.html" class="card">Лабораторна №3 — YouTube Layout (FlexBox)</a>
+      <a href="lab4/index.html" class="card">Лабораторна №4 — Планер (Grid)</a>
+      <a href="pract3/index.html" class="card">Практична №3 — YouTube Layout (FlexBox)</a>
+      <a href="pract4/index.html" class="card">Практична №4 — Fullsize Клавіатура (Grid)</a>
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Про мене</h2>
+    <p>Я студент, який вивчає веб‑розробку та суміжні технології. У цьому портфоліо зібрані мої навчальні проєкти.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact">
+    <h2>Контакти</h2>
+    <p>Email: student@example.com</p>
+    <p>© 2025 Моє портфоліо</p>
+  </footer>
+
+  <!-- Fixed Note -->
+  <div class="fixed-note">Дизайн реалізовано власноруч</div>
 </body>
 </html>
